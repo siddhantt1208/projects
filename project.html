@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            box-sizing: border-box;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .hero-section{
+            width: 100%;
+            position: relative;
+        }
+        .hero-section h1{
+            position: absolute;
+            top: 18%;
+            left: 7%;
+            color: white;  
+            /* font-size: ; */
+        }
+        .hero-section h1 span{
+            font-size: 1rem; 
+            font-weight: 200;
+        }
+        .hero-section h2{
+            position: absolute;
+            top: 24%;
+            left: 7%;
+            color: white;  
+        }
+        .hero-section img{
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+        }
+        .black{
+            position: relative;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            padding: 5px;
+        }
+        .black span{
+            font-size: 80px;
+        }
+        .card-container-section{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-left: 10px;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        .card-container {
+            max-width: 400px;
+            max-height: 450px;
+            position: static;
+            box-shadow: 1px 0px 5px 0px grey;
+            border-radius: 10px;
+        }
+        .card-container img{
+            position: relative;
+            width: 100%;
+            height: 50%;
+            object-fit: cover;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        .content{
+            display: grid;
+            grid-template-columns: repeat( auto-fit, minmax(340px, 1fr));
+            gap: 15px;
+            margin: 10px;
+        }
+        .content h3{
+            padding-left: 10px;
+            padding-top: 5px;
+        }
+        .content p{
+            padding-left: 10px;
+            margin-bottom: -30px;
+           
+        }
+        .bottom-section{
+            display: flex;
+            margin: 80px;
+            gap: 50px;
+            justify-content: space-evenly;
+        }
+        .info1{
+            background-color: rgb(53, 84, 238);
+            height: 150px;
+            color: black;
+            padding: 20px;
+            height: fit-content;
+        }
+        .info1 p{
+            padding-top: 10px;
+        }
+        .info2 p{
+            padding-top: 10px;
+        }
+        .info2{
+            background-color: rgb(53, 84, 238);
+            height: 150px;
+            color: black;
+            padding: 20px;
+            height: fit-content;
+        }
+        @media (max-width:700px){
+            .hero-section h1{
+                position: absolute;
+                top: 5%;
+                left: 40%;
+                color:white;  
+            }
+            .hero-section h2{
+                position: absolute;
+                top: 12%;
+                left: 25%;
+                color: white;  
+            }
+            .black{
+                font-size: 20px;
+                display: grid;
+                
+            }
+            .black span{
+                font-size: 50px;
+            }
+            .content{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hero-section">
+            <img src="https://images.unsplash.com/photo-1496065187959-7f07b8353c55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="image">
+            <h1>Hi, <span>I am siddhant Choudhary</span></h1>
+            <h2>FULL STACK DEVELOPER</h2>
+        </section>
+        <section class="black box section">
+            <h1>WORK, I CAN DO FOR <span>YOU</span></h1>
+        </section>
+        <section class="card-container-section">
+            <div class="card-container">
+                <img src="https://images.unsplash.com/photo-1542903660-eedba2cda473?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="image">
+                <div class="content">
+                    <h3>Data Science</h3>
+                    <p>lor Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vero labore earum obcaecati odit eligendi doloribus, necessitatibus, tempore qui magni hic voluptatem aperiam sapiente eum? Sequi fuga vero adipisci laudantium?</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80" alt="image">
+                <div class="content">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vero labore earum obcaecati odit eligendi doloribus, necessitatibus, tempore qui magni hic voluptatem aperiam sapiente eum? Sequi fuga vero adipisci laudantium?</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <img src="https://images.unsplash.com/photo-1494688290324-e296afa7dc45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="image">
+                <div class="content">
+                    <h3>Andriod Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vero labore earum obcaecati odit eligendi doloribus, necessitatibus, tempore qui magni hic voluptatem aperiam sapiente eum? Sequi fuga vero adipisci laudantium?</p>
+                </div>
+            </div>
+        </section>
+        <section class="bottom-section">
+            <div class="info1">
+                <h2>Contact Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vero labore earum obcaecati odit eligendi doloribus, necessitatibus, tempore qui magni hic voluptatem aperiam sapiente
+            </div>
+            <div class="info2">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vero labore earum obcaecati odit eligendi doloribus, necessitatibus, tempore qui magni hic voluptatem aperiam sapiente
+            </div>
+        </section>
+    </div> 
+</body>
+</html>
